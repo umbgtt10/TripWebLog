@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<adaptive-icon xmlns:androId="http://schemas.androId.com/apk/res/androId">
+    <background androId:drawable="@color/launcher_background" />
+    <foreground androId:drawable="@mipmap/launcher_foreground" />
+</adaptive-icon>

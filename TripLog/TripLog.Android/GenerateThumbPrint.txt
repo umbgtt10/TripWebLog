@@ -1,0 +1,9 @@
+﻿"C:\Program Files (x86)\Java\jdk1.8.0_131\bin\keytool.exe" -list -v -keystore "C:\Users\Umberto\AppData\Local\Xamarin\Mono for Android\debug.keystore"
+
+password=android
+
+Keystore name: "debug.keystore"
+Keystore password: "android"
+Key alias: "androiddebugkey"
+Key password: "android"
+
