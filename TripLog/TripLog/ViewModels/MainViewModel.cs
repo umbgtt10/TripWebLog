@@ -11,7 +11,7 @@
     using TripLog.Models;
     using TripLog.Services;
 
-    public class MainViewModel: BaseViewModel
+    public class MainViewModel: BaseViewModel 
     {
         #region Observables and commands
         private ObservableCollection<TripLogEntry> _logEntries;
