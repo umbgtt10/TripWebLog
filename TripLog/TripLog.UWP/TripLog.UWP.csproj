@@ -7,8 +7,8 @@
     <ProjectGuid>{6979C43A-92A9-41A3-8319-F65731A0D486}</ProjectGuid>
     <OutputType>AppContainerExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>TestMultiPlatform.UWP</RootNamespace>
-    <AssemblyName>TestMultiPlatform.UWP</AssemblyName>
+    <RootNamespace>TripLog.UWP</RootNamespace>
+    <AssemblyName>TripLog.UWP</AssemblyName>
     <DefaultLanguage>en-US</DefaultLanguage>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetPlatformVersion>10.0.17134.0</TargetPlatformVersion>
@@ -92,6 +92,7 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Consts\Consts.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>

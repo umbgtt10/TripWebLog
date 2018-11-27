@@ -2,6 +2,8 @@
 {
     using System;
 
+    using TripLog.UWP.Consts;
+
     using Windows.ApplicationModel;
     using Windows.ApplicationModel.Activation;
     using Windows.UI.Xaml;
@@ -30,8 +32,6 @@
         /// <param name="e">Details about the launch request and process.</param>
         protected override void OnLaunched(LaunchActivatedEventArgs e)
         {
-
-
             Frame rootFrame = Window.Current.Content as Frame;
 
             // Do not repeat app initialization when the Window already has content,
@@ -46,7 +46,7 @@
                 Xamarin.Forms.Forms.Init(e);
 
                 // TODO: Add your UWP maps token
-                Xamarin.FormsMaps.Init("YOUR-UWP-MAPS-TOKEN");
+                Xamarin.FormsMaps.Init(Constants.UwpCode);
 
                 if (e.PreviousExecutionState == ApplicationExecutionState.Terminated)
                 {
