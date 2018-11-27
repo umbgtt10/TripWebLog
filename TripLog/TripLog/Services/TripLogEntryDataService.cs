@@ -9,8 +9,8 @@
 
     public class TripLogEntryDataService: BaseHttpService, ITripLogDataService
     {
-        private readonly Uri _baseUri;
-        private readonly IDictionary<string, string> _headers;
+        protected readonly Uri _baseUri;
+        protected readonly IDictionary<string, string> _headers;
 
         public TripLogEntryDataService(Uri baseUri)
         {

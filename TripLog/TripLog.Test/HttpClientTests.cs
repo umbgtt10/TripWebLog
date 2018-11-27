@@ -4,20 +4,34 @@ namespace TripLog.Test
     using System.Threading.Tasks;
 
     using Microsoft.VisualStudio.TestTools.UnitTesting;
-
     using TripLog.Services;
 
     [TestClass]
     public class HttpClientTests
     {
-        private ITripLogDataService _client;
+        private TripLogEntryDataServiceExtended _client;
         private Uri _url;
 
         [TestInitialize]
-        public void Setup()
+        public async Task Setup()
         {
-            _url = new Uri("http://192.168.1.21:30080/api/TripLogWeb/");
-            _client = new TripLogEntryDataService(_url);
+            _url = new Uri("http://localhost:30080/api/TripLogWeb/");
+            _client = new TripLogEntryDataServiceExtended(_url);
+            await SetBaseLine();
+        }
+
+        [TestCleanup]
+        public async Task ShutDown()
+        {
+            await SetBaseLine();
+        }
+
+        private async Task SetBaseLine()
+        {
+            if (_url != null)
+            {
+                await _client.RemoveAll();
+            }
         }
 
         [TestMethod]
@@ -43,6 +57,7 @@ namespace TripLog.Test
 
             Assert.AreEqual(0, result.Count);            
         }
+
         [TestMethod]
         public async Task SyncSimpleInsertUpdate()
         {
