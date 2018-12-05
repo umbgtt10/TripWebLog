@@ -7,3 +7,4 @@ Keystore password: "android"
 Key alias: "androiddebugkey"
 Key password: "android"
 
+https://docs.microsoft.com/en-us/azure/devops/pipelines/apps/mobile/app-signing?view=vsts&tabs=apple-install-during-build
